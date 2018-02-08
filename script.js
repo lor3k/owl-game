@@ -284,11 +284,6 @@
                         description.appendChild(start)
                         start.innerText = 'Zagraj jeszcze raz'
                         start.addEventListener('click', init)
-                        let returnButton = document.createElement('div')
-                        description.appendChild(returnButton)
-                        returnButton.innerText = 'Powrót do WEBEES'
-                        returnButton.className = 'start'
-                        returnButton.addEventListener('click', function () { window.location.href = '../index.html' })
                     }, 200)
                 }
             }
