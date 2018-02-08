@@ -17,7 +17,7 @@
 body{
     font-family: 'Quicksand', sans-serif;
     margin: 0;
-    background-color: #132326;
+    background-color: lightgrey;
     background-image: radial-gradient(circle at center, transparent, rgba(0,0,0,0.3));
     display: flex;
     flex-direction: column;
@@ -120,19 +120,23 @@ body{
 }
 
 nav{
-    margin: 1em;
+    margin: 0.5em;
+    padding: 0.5em;
+    background-color: #333;
+    border-radius: 50px;    
+    box-shadow: 0 0 20px black;    
     width: 90vh;
     min-width: 500px;
     max-width: 90vw;
     display:flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
 }
 
 .description{
-    box-shadow: 0 0 30px #88A34F;
-    color: #88A34F;
-    background-color: #132326;
+    box-shadow: 0 0 20px black;
+    color: black;
+    background-color: #ccc;
     border-radius: 1em;
     border: 1px solid black;
     padding: 2em 2em 2em 2em;
@@ -146,25 +150,21 @@ nav{
     z-index: 10;
 }
 
-.description h1{
-    margin: 0;
-}
-
 .start{
     text-align: center;
-    color: #88A34F;
+    color: darkgreen;
     background-color: transparent;
     border-radius: 20px;
     padding: 0.5em;
     font-size: 1.1em;
     cursor: pointer;
-    border: 1px solid #88A34F;
+    border: 1px solid darkgreen;
     transition: 0.5s;
     z-index: 10;
     margin: 0.5em;
 }
 
 .start:hover{
-    color: #132326;
-    background-color: #88A34F;
+    color: #ddd;
+    background-color: green;
 }
